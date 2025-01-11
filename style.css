@@ -1,0 +1,273 @@
+/* General Styles */
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --primary-color: #28a745;
+    --secondary-color: #218838;
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --hover-color: #e9ecef;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 1000px;
+    background: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-section .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+.cta-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed);
+    
+}
+
+.cta-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* About Section */
+.about-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section .about-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.about-section .grid-item {
+    flex: 1;
+    background-color: #f9f9f9;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-color) 0px 4px 8px;
+}
+
+.about-section .grid-item img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+}
+
+.about-section .grid-item h3 {
+    font-size: 1.5rem;
+}
+
+.about-section .grid-item p {
+    font-size: 1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.benefits-section h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.benefits-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-section ul li {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.how-it-works-section h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.how-it-works-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.how-it-works-section ul li {
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+
+/* Social Proof Section */
+.social-proof-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+.social-proof-section .testimonials {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.social-proof-section .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-color) 0px 4px 8px;
+    max-width: 400px;
+}
+
+.social-proof-section .testimonial p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.social-proof-section .testimonial cite {
+    font-size: 0.875rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Call to Action Section */
+.cta-section {
+    background-color: rgb(61, 58, 58);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.cta-section .cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-links p {
+    margin: 0;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-section .about-grid {
+        flex-direction: column;
+    }
+
+    .social-proof-section .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn {
+        font-size: 1.125rem;
+    }
+}
